@@ -3,7 +3,7 @@
   <head><meta charset="utf-8"/>
     <meta name="viewport" content="width=device-width,initial-scale=1"/>
     <meta name="color-scheme" content="light dark"><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="prev" title="Stout Case Studies" href="../index.html" />
+<link rel="index" title="Index" href="../genindex.html" /><link rel="search" title="Search" href="../search.html" /><link rel="next" title="Case Study 2" href="CaseStudy2.html" /><link rel="prev" title="Stout Case Studies" href="../index.html" />
 
     <meta name="generator" content="sphinx-4.2.0, furo 2021.10.09"/>
         <title>Case Study 1 - Stout Case Studies</title>
@@ -148,11 +148,11 @@
   
   <span class="sidebar-brand-text">Stout Case Studies</span>
   
-</a>
-<div class="sidebar-scroll"><div class="sidebar-tree">
+</a><div class="sidebar-scroll"><div class="sidebar-tree">
   <p class="caption" role="heading"><span class="caption-text">Case Studies</span></p>
 <ul class="current">
 <li class="toctree-l1 current current-page"><a class="current reference internal" href="#">Case Study 1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="CaseStudy2.html">Case Study 2</a></li>
 </ul>
 
 </div>
@@ -181,19 +181,25 @@
         <article role="main">
           <section id="case-study-1">
 <h1>Case Study 1<a class="headerlink" href="#case-study-1" title="Permalink to this headline">¶</a></h1>
-<p>This study had the goal of predicting interest rates, using data from Lending Club,
+<p>This study has the goal of predicting interest rates using data from Lending Club,
 a peer-to-peer lending platform.</p>
+<section id="data-set">
+<h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">¶</a></h2>
+<p>The dataset used is a subset of anonymized loan applications from Lending Club.
+It can be found <a class="reference external" href="https://www.openintro.org/data/index.php?data=loans_full_schema">here</a>. The only issue dealt with in using this data was a small
+number of missing values for some of the features.</p>
+</section>
 <section id="eda">
 <h2>EDA<a class="headerlink" href="#eda" title="Permalink to this headline">¶</a></h2>
 <p>Below are visualizations which give insight into the dataset, giving clues as to which
-approaches may be successful for interest rate prediction.</p>
+approaches may be successful for our use case.</p>
 <section id="geographic-loan-distribution">
 <h3>Geographic Loan Distribution<a class="headerlink" href="#geographic-loan-distribution" title="Permalink to this headline">¶</a></h3>
 <a class="reference external image-reference" href="./files/us_heatmap.png"><img alt="United States Loan Heatmap" src="../images/us_heatmap.png"/></a>
-<p>The number of loan applications looks to be roughly proportional to the overall
-population of the state. We will remove state from consideration as a feature, as
-it would result in 50 extra features, one-hot encoded. This would result in
-unnecessarily long training times.</p>
+<p>The number of loan applications per state looks to be roughly proportional to the
+state population. Thus, we remove <code class="docutils literal notranslate"><span class="pre">state</span></code> from consideration. Keeping it in
+the data would result in a large number of extra features after one-hot encoding, not
+useful in interest prediction.</p>
 </section>
 <section id="interest-rate-distribution">
 <h3>Interest Rate Distribution<a class="headerlink" href="#interest-rate-distribution" title="Permalink to this headline">¶</a></h3>
@@ -256,7 +262,7 @@ related to joint applications, <code class="docutils literal notranslate"><span 
 </section>
 <section id="preprocessing">
 <h2>Preprocessing<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h2>
-<p>Preprocessing consisted of the following:</p>
+<p>Preprocessing of the overall dataset consisted of the following:</p>
 <ul class="simple">
 <li><p>Deletion of bloated/useless features</p>
 <ul>
@@ -282,7 +288,7 @@ related to joint applications, <code class="docutils literal notranslate"><span 
 </li>
 </ul>
 <p>These pre-processing steps were performed for both the train set, and test set, but
-separately as to not introduce unintended biases to the model.</p>
+separately as to not introduce unintended biases to the model:</p>
 <ul class="simple">
 <li><p>Null Value Replacement</p>
 <ul>
@@ -300,8 +306,7 @@ separately as to not introduce unintended biases to the model.</p>
 </section>
 <section id="interest-rate-prediction-as-a-classification-problem">
 <h2>Interest Rate Prediction as a Classification Problem<a class="headerlink" href="#interest-rate-prediction-as-a-classification-problem" title="Permalink to this headline">¶</a></h2>
-<p>Initially, I approached this a classfication problem. Below is a table of model
-results on the validation set (0-1 Loss). Evidently, this approach was a spectacular failure.</p>
+<p>Initially, I approached this a classfication problem with discrete interest rates as classes. The below table shows results on the validation set (0-1 Loss). Evidently, this approach was a spectacular failure.</p>
 <div class="table-wrapper"><table class="docutils align-default">
 <colgroup>
 <col style="width: 50%"/>
@@ -326,8 +331,8 @@ results on the validation set (0-1 Loss). Evidently, this approach was a spectac
 </table></div>
 <p><em>Neural net used linear layers with ReLU activation functions.</em></p>
 </section>
-<section id="interest-rate-predicion-as-a-regression-problem">
-<h2>Interest Rate Predicion as a Regression Problem<a class="headerlink" href="#interest-rate-predicion-as-a-regression-problem" title="Permalink to this headline">¶</a></h2>
+<section id="interest-rate-prediction-as-a-regression-problem">
+<h2>Interest Rate Prediction as a Regression Problem<a class="headerlink" href="#interest-rate-prediction-as-a-regression-problem" title="Permalink to this headline">¶</a></h2>
 <a class="reference external image-reference" href="./files/training_loss_normal.png"><img alt="Training Loss Graph" src="../images/training_loss_normal.png"/></a>
 <p>I then approached the problem as a regression. This proved more fruitful. I only had
 the time to run one approach, a NN, which resulted in a RMSE on the validation set of
@@ -335,7 +340,8 @@ the time to run one approach, a NN, which resulted in a RMSE on the validation s
 <section id="including-sub-grade-and-grade">
 <h3>Including <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code><a class="headerlink" href="#including-sub-grade-and-grade" title="Permalink to this headline">¶</a></h3>
 <a class="reference external image-reference" href="./files/training_loss_oneone.png"><img alt="Training Loss Graph" src="../images/training_loss_oneone.png"/></a>
-<p>As mentioned in the EDA, including <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code> greatly improved model RMSE,
+<p>To show the near-direct relation between <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code> with interest rate, I
+ran the NN including these features. As expected,  including <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code> greatly improved model RMSE,
 resulting in a validation RMSE of 0.407 percentage points. The RMSE while training is shown above.</p>
 </section>
 </section>
@@ -355,7 +361,15 @@ contained within the dataset</p></li>
       <footer>
         
         <div class="related-pages">
-          
+          <a class="next-page" href="CaseStudy2.html">
+              <div class="page-info">
+                <div class="context">
+                  <span>Next</span>
+                </div>
+                <div class="title">Case Study 2</div>
+              </div>
+              <svg><use href="#svg-arrow-right"></use></svg>
+            </a>
           <a class="prev-page" href="../index.html">
               <svg><use href="#svg-arrow-right"></use></svg>
               <div class="page-info">
@@ -396,6 +410,7 @@ contained within the dataset</p></li>
           <div class="toc-tree">
             <ul>
 <li><a class="reference internal" href="#">Case Study 1</a><ul>
+<li><a class="reference internal" href="#data-set">Data Set</a></li>
 <li><a class="reference internal" href="#eda">EDA</a><ul>
 <li><a class="reference internal" href="#geographic-loan-distribution">Geographic Loan Distribution</a></li>
 <li><a class="reference internal" href="#interest-rate-distribution">Interest Rate Distribution</a></li>
@@ -405,7 +420,7 @@ contained within the dataset</p></li>
 </li>
 <li><a class="reference internal" href="#preprocessing">Preprocessing</a></li>
 <li><a class="reference internal" href="#interest-rate-prediction-as-a-classification-problem">Interest Rate Prediction as a Classification Problem</a></li>
-<li><a class="reference internal" href="#interest-rate-predicion-as-a-regression-problem">Interest Rate Predicion as a Regression Problem</a><ul>
+<li><a class="reference internal" href="#interest-rate-prediction-as-a-regression-problem">Interest Rate Prediction as a Regression Problem</a><ul>
 <li><a class="reference internal" href="#including-sub-grade-and-grade">Including <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code></a></li>
 </ul>
 </li>
