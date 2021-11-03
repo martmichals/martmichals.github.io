@@ -7,9 +7,9 @@
 
     <meta name="generator" content="sphinx-4.2.0, furo 2021.10.09"/>
         <title>Case Study 1 - Stout Case Studies</title>
-      <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo.css?digest=0254c309f5cadf746f1a613e7677379ac9c8cdcd" />
-    <link rel="stylesheet" type="text/css" href="../_static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
+      <link rel="stylesheet" type="text/css" href="../static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/furo.css?digest=0254c309f5cadf746f1a613e7677379ac9c8cdcd" />
+    <link rel="stylesheet" type="text/css" href="../static/styles/furo-extensions.css?digest=16fb25fabf47304eee183a5e9af80b1ba98259b1" />
     
     
 
@@ -189,7 +189,7 @@ a peer-to-peer lending platform.</p>
 approaches may be successful for interest rate prediction.</p>
 <section id="geographic-loan-distribution">
 <h3>Geographic Loan Distribution<a class="headerlink" href="#geographic-loan-distribution" title="Permalink to this headline">¶</a></h3>
-<a class="reference external image-reference" href="./files/us_heatmap.png"><img alt="United States Loan Heatmap" src="../_images/us_heatmap.png"/></a>
+<a class="reference external image-reference" href="./files/us_heatmap.png"><img alt="United States Loan Heatmap" src="../images/us_heatmap.png"/></a>
 <p>The number of loan applications looks to be roughly proportional to the overall
 population of the state. We will remove state from consideration as a feature, as
 it would result in 50 extra features, one-hot encoded. This would result in
@@ -197,7 +197,7 @@ unnecessarily long training times.</p>
 </section>
 <section id="interest-rate-distribution">
 <h3>Interest Rate Distribution<a class="headerlink" href="#interest-rate-distribution" title="Permalink to this headline">¶</a></h3>
-<a class="reference external image-reference" href="./files/interest_distribution.png"><img alt="Interest Rate Distribution" src="../_images/interest_distribution.png"/></a>
+<a class="reference external image-reference" href="./files/interest_distribution.png"><img alt="Interest Rate Distribution" src="../images/interest_distribution.png"/></a>
 <p>Interest rate follows what looks to be a rough beta distribution. The graph looks
 to be missing bars, which led to the observation that interest rate is, in fact, a
 categorical variable. This was confirmed <a class="reference external" href="https://www.lendingclub.com/investing/investor-education/interest-rates-and-fees">online</a>. This was also
@@ -241,15 +241,15 @@ rest of the rich feature set to predict interest rates.</p>
 </section>
 <section id="a-note-on-application-type">
 <h3>A Note on <code class="docutils literal notranslate"><span class="pre">application_type</span></code><a class="headerlink" href="#a-note-on-application-type" title="Permalink to this headline">¶</a></h3>
-<a class="reference external image-reference" href="./files/application_type_pie.png"><img alt="Application Type Pie Char" src="../_images/application_type_pie.png"/></a>
+<a class="reference external image-reference" href="./files/application_type_pie.png"><img alt="Application Type Pie Char" src="../images/application_type_pie.png"/></a>
 <p>85% of applications are individual. This makes sense, as the features
 related to joint applications, <code class="docutils literal notranslate"><span class="pre">annual_income_joint</span></code>, <code class="docutils literal notranslate"><span class="pre">verification_income_joint</span></code>,
 <code class="docutils literal notranslate"><span class="pre">debt_to_income_joint</span></code> all had around 85% of their values missing.</p>
 </section>
 <section id="identifying-possible-relations">
 <h3>Identifying Possible Relations<a class="headerlink" href="#identifying-possible-relations" title="Permalink to this headline">¶</a></h3>
-<a class="reference external image-reference" href="./files/open_cc_accts.png"><img alt="Open CC Accounts" src="../_images/open_cc_accts.png"/></a>
-<a class="reference external image-reference" href="./files/debt_limit_relation.png"><img alt="Debt Limi" src="../_images/debt_limit_relation.png"/></a>
+<a class="reference external image-reference" href="./files/open_cc_accts.png"><img alt="Open CC Accounts" src="../images/open_cc_accts.png"/></a>
+<a class="reference external image-reference" href="./files/debt_limit_relation.png"><img alt="Debt Limi" src="../images/debt_limit_relation.png"/></a>
 <p>There look to be weak and possibly non-linear relations between both
 <code class="docutils literal notranslate"><span class="pre">num_open_cc_accounts</span></code> and <code class="docutils literal notranslate"><span class="pre">total_debt_limit</span></code> and <code class="docutils literal notranslate"><span class="pre">interest_rate</span></code>.</p>
 </section>
@@ -328,13 +328,13 @@ results on the validation set (0-1 Loss). Evidently, this approach was a spectac
 </section>
 <section id="interest-rate-predicion-as-a-regression-problem">
 <h2>Interest Rate Predicion as a Regression Problem<a class="headerlink" href="#interest-rate-predicion-as-a-regression-problem" title="Permalink to this headline">¶</a></h2>
-<a class="reference external image-reference" href="./files/training_loss_normal.png"><img alt="Training Loss Graph" src="../_images/training_loss_normal.png"/></a>
+<a class="reference external image-reference" href="./files/training_loss_normal.png"><img alt="Training Loss Graph" src="../images/training_loss_normal.png"/></a>
 <p>I then approached the problem as a regression. This proved more fruitful. I only had
 the time to run one approach, a NN, which resulted in a RMSE on the validation set of
 2.97 percentage points. With more time I would run more regression models to try and find a better solution. The RMSE while training is shown above.</p>
 <section id="including-sub-grade-and-grade">
 <h3>Including <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code><a class="headerlink" href="#including-sub-grade-and-grade" title="Permalink to this headline">¶</a></h3>
-<a class="reference external image-reference" href="./files/training_loss_oneone.png"><img alt="Training Loss Graph" src="../_images/training_loss_oneone.png"/></a>
+<a class="reference external image-reference" href="./files/training_loss_oneone.png"><img alt="Training Loss Graph" src="../images/training_loss_oneone.png"/></a>
 <p>As mentioned in the EDA, including <code class="docutils literal notranslate"><span class="pre">sub_grade</span></code> and <code class="docutils literal notranslate"><span class="pre">grade</span></code> greatly improved model RMSE,
 resulting in a validation RMSE of 0.407 percentage points. The RMSE while training is shown above.</p>
 </section>
@@ -375,7 +375,7 @@ contained within the dataset</p></li>
               and
               <a class="muted-link" href="https://pradyunsg.me">@pradyunsg</a>'s
               <a href="https://github.com/pradyunsg/furo">Furo theme</a>. |
-            <a class="muted-link" href="../_sources/case-studies/CaseStudy1.rst.txt"
+            <a class="muted-link" href="../sources/case-studies/CaseStudy1.rst.txt"
                rel="nofollow">
               Show Source
             </a>
@@ -421,10 +421,10 @@ contained within the dataset</p></li>
       
     </aside>
   </div>
-</div><script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
-    <script src="../_static/jquery.js"></script>
-    <script src="../_static/underscore.js"></script>
-    <script src="../_static/doctools.js"></script>
-    <script src="../_static/scripts/main.js"></script>
+</div><script data-url_root="../" id="documentation_options" src="../static/documentation_options.js"></script>
+    <script src="../static/jquery.js"></script>
+    <script src="../static/underscore.js"></script>
+    <script src="../static/doctools.js"></script>
+    <script src="../static/scripts/main.js"></script>
     </body>
 </html>
