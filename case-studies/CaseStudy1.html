@@ -186,8 +186,8 @@ a peer-to-peer lending platform.</p>
 <section id="data-set">
 <h2>Data Set<a class="headerlink" href="#data-set" title="Permalink to this headline">¶</a></h2>
 <p>The dataset used is a subset of anonymized loan applications from Lending Club.
-It can be found <a class="reference external" href="https://www.openintro.org/data/index.php?data=loans_full_schema">here</a>. The only issue dealt with in using this data was a small
-number of missing values for some of the features.</p>
+It can be found <a class="reference external" href="https://www.openintro.org/data/index.php?data=loans_full_schema">here</a>. Some values were missing for some
+of the features. The way I dealt with these is described later, in the pre-processing section.</p>
 </section>
 <section id="eda">
 <h2>EDA<a class="headerlink" href="#eda" title="Permalink to this headline">¶</a></h2>
@@ -266,7 +266,7 @@ related to joint applications, <code class="docutils literal notranslate"><span 
 <ul class="simple">
 <li><p>Deletion of bloated/useless features</p>
 <ul>
-<li><p><code class="docutils literal notranslate"><span class="pre">emp_title</span></code>: there are apx. 4500 of these titles. Not very insightful w/o further processing</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">emp_title</span></code>: there are ~4500 of these titles. Not very insightful w/o further processing</p></li>
 <li><p><code class="docutils literal notranslate"><span class="pre">state</span></code>: see EDA</p></li>
 </ul>
 </li>
