@@ -10,13 +10,13 @@ profile:
   address: >
     <p>Champaign, IL 61820</p>
 
-news: true  # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
+news: false  # includes a list of news items
+selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a current student at the University of Illinois at Urbana-Champaign. I started off studying Electrical Engineering, but after some time, I realized my interests lay a couple
+layers of abstraction higher, in Natural Language Processing.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+Currently, I am working under [Professor Girju](https://experts.illinois.edu/en/persons/corina-r-girju). We are using a dataset of patient-doctor interactions to 
+draw conclusions on the nature of empathy in patient-doctor interactions.
