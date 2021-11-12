@@ -13,7 +13,7 @@ a peer-to-peer lending platform.
 
 ### Data Set
 The dataset used is a subset of anonymized loan applications from Lending Club.
-It can be found [here](https://www.openintro.org/data/index.php?data=loans_full_schema ). The only issue dealt with in using this data was a small
+It can be found [here](https://www.openintro.org/data/index.php?data=loans_full_schema ). The only issue dealt with in using this data set was a small
 number of missing values for some of the features.
 
 ### EDA
