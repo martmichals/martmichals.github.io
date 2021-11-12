@@ -42,7 +42,3 @@ jobs:
           echo "::set-output name=SRC_BRANCH::${GITHUB_REF#refs/heads/}"
         fi
         echo "::set-output name=DEPLOY_BRANCH::gh-pages"
-    - name: Deploy website 
-      run:  yes 2>/dev/null | bin/deploy --verbose ${{ steps.setup.outputs.NO_PUSH }}
-                    --src ${{ steps.setup.outputs.SRC_BRANCH }} 
-                    --deploy ${{ steps.setup.outputs.DEPLOY_BRANCH }} 
