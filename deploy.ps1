@@ -45,9 +45,9 @@ Invoke-Utility git checkout gh-pages
 # Add the changes
 Remove-Item .\* -Recurse
 Copy-Item $T\* -Destination . -Recurse
-# git add .
-# git commit -m "Deployment of portfolio"
-# git push
+Invoke-Utility git add .
+Invoke-Utility git commit -m "Deployment of portfolio"
+Invoke-Utility git push
 
-# # Change back to dev branch
-# git checkout master
+# Change back to dev branch
+Invoke-Utility git checkout master
