@@ -19,4 +19,4 @@ I'm a current student at the University of Illinois at Urbana-Champaign. I start
 layers of abstraction higher, in Natural Language Processing.
 
 Currently, I am working under [Professor Girju](https://experts.illinois.edu/en/persons/corina-r-girju). We are using a dataset of patient-doctor interactions to 
-draw conclusions on the nature of empathy in a clincal setting.
+draw conclusions on the nature of empathy in a clinical setting.
