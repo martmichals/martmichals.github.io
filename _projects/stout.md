@@ -151,5 +151,5 @@ when it comes to customer retention.
 
 ### Revenue Lost to Customer Attrition
 
-Between 2016 and 2017, this store or business lost $4.844M in revenue due to customer attrition. Cannot calculate this statistic for 2015-2016, as it cannot be split into
+Between 2016 and 2017, this store/business lost $4.844M in revenue due to customer attrition. Cannot calculate this statistic for 2015-2016, as it cannot be split into
 new and existing customers.
