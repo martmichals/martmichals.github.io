@@ -1,6 +1,6 @@
 # Build locally
 git checkout master
-# jekyll build
+jekyll build
 
 # Create temporary folder
 $T="$($Env:temp)\tmp$([convert]::tostring((get-random 65535),16).padleft(4,'0')).tmp"
