@@ -12,12 +12,10 @@ Copy-Item .gitignore -Destination $T
 
 # Switch branches to the live branch, push changes
 git checkout gh-pages
-git branch
 
-# Remove-Item .\* -Recurse
-# Copy-Item $T\* -Destination . -Recurse
-
-# # Add the changes
+# Add the changes
+Remove-Item .\* -Recurse
+Copy-Item $T\* -Destination . -Recurse
 # git add .
 # git commit -m "Deployment of portfolio"
 # git push
