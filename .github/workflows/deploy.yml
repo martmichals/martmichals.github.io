@@ -9,6 +9,9 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      - name: install magick dependencies
+        run: sudo apt-get install graphicsmagick-libmagick-dev-compat; sudo apt-get install imagemagick; sudo apt-get install libmagickcore-dev; sudo apt-get install libmagickwand-dev 
+
       - uses: actions/checkout@v2
 
       # Use GitHub Actions' cache to cache dependencies on servers
@@ -32,4 +35,4 @@ jobs:
           bundler_ver: '>=0'         # Default is latest bundler version
           cname: ''                  # Default is to not use a cname
           actor: ''                  # Default is the GITHUB_ACTOR
-          pre_build_commands: 'sudo apt-get install graphicsmagick-libmagick-dev-compat & sudo apt-get install imagemagick & sudo apt-get install libmagickcore-dev & sudo apt-get install libmagickwand-dev'     # Installing additional dependencies (Arch Linux)
+          pre_build_commands: ''     # Installing additional dependencies (Arch Linux)
