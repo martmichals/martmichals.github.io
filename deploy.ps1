@@ -14,6 +14,7 @@ Copy-Item .gitignore -Destination $T
 git checkout gh-pages
 
 # Copy HTML souce into the hosting branch
+Remove-Item .\* -Recurse
 Copy-Item $T\* -Destination . -Recurse
 
 # Commit and push changes
