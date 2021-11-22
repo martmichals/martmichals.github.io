@@ -4,7 +4,7 @@ title: projects
 permalink: /projects/
 description: A collection of the projects I have authored or contributed to.
 nav: true
-display_categories: ["case studies"]
+display_categories: ["case studies", "software"]
 horizontal: false
 ---
 <div class="projects">
