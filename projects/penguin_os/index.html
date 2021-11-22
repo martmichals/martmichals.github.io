@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>
+
+  Martin  Michalski
+
+
+  | PenguinOS
+
+</title>
+<meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+">
+
+<!-- Open Graph -->
+
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" integrity="sha512-MoRNloxbStBcD8z3M/2BmnT+rg4IsMxPkXaGh2zD6LGNNFE80W3onsAhRcMAMrSoyWL9xD7Ert0men7vR8LUZg==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.19.1/css/mdb.min.css" integrity="sha512-RO38pBRxYH3SoOprtPTD86JFOclM51/XTIdEPh5j8sj4tp8jmQIx26twG52UaLi//hQldfrh7e51WzP9wuP32Q==" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"  integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.0/css/academicons.min.css" integrity="sha512-W4yqoT1+8NLkinBLBZko+dFB2ZbHsYLDdr50VElllRcNt2Q4/GSs6u71UHKxB7S6JEMCp5Ve4xjh3eGQl/HRvg==" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+<!-- Styles -->
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📈</text></svg>">
+
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="canonical" href="/projects/penguin_os/">
+
+
+<!-- Dark Mode -->
+<script src="/assets/js/theme.js"></script>
+<script src="/assets/js/dark_mode.js"></script>
+
+
+
+    
+<!-- MathJax -->
+<script type="text/javascript">
+  window.MathJax = {
+    tex: {
+      tags: 'ams'
+    }
+  };
+</script>
+<script defer type="text/javascript" id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3.2.0/es5/tex-mml-chtml.js"></script>
+<script defer src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+
+
+    <script src="/assets/js/distillpub/template.v2.js"></script>
+    <script src="/assets/js/distillpub/transforms.v2.js"></script>
+    <script src="/assets/js/distillpub/overrides.js"></script>
+    
+    <style type="text/css">
+      .fake-img {
+  background: #bbb;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 12px;
+} .fake-img p {
+  font-family: monospace;
+  color: white;
+  text-align: left;
+  margin: 12px 0;
+  text-align: center;
+  font-size: 16px;
+}
+
+    </style>
+    
+  </head>
+
+  <d-front-matter>
+    <script async type="text/json">{
+      "title": "PenguinOS",
+      "description": "Work done for ECE 391's extra credit competition.",
+      "published": "November 22, 2021",
+      "authors": [
+        
+        {
+          "author": "Martin Michalski",
+          "authorURL": "https://www.linkedin.com/in/martin-michalski-292150175/",
+          "affiliations": [
+            {
+              "name": "UIUC",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "Neha Agarwal",
+          "authorURL": "https://www.linkedin.com/in/neha-agarwal-06458019b/",
+          "affiliations": [
+            {
+              "name": "UIUC",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "Andrew Popovich",
+          "authorURL": "https://www.linkedin.com/in/andrew-popovich-563ab9168/",
+          "affiliations": [
+            {
+              "name": "UIUC",
+              "url": ""
+            }
+          ]
+        },
+        
+        {
+          "author": "William Cai",
+          "authorURL": "https://www.linkedin.com/in/william-cai-227168193/",
+          "affiliations": [
+            {
+              "name": "UIUC",
+              "url": ""
+            }
+          ]
+        }
+        
+      ],
+      "katex": {
+        "delimiters": [
+          {
+            "left": "$",
+            "right": "$",
+            "display": false
+          },
+          {
+            "left": "$$",
+            "right": "$$",
+            "display": true
+          }
+        ]
+      }
+    }</script>
+  </d-front-matter>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light navbar-expand-sm fixed-top">
+    <div class="container">
+      
+      <a class="navbar-brand title font-weight-lighter" href="https://martmichals.github.io/">
+       <span class="font-weight-bold">Martin</span>   Michalski
+      </a>
+      
+      <!-- Navbar Toggle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              About
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/resume-cv/" style="text-transform: capitalize;">
+                Resume
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/projects/" style="text-transform: capitalize;">
+                projects
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/publications/" style="text-transform: capitalize;">
+                publications
+                
+              </a>
+          </li>
+          
+          
+          
+          
+            <div class="toggle-container">
+              <a id="light-toggle">
+                  <i class="fas fa-moon"></i>
+                  <i class="fas fa-sun"></i>
+              </a>
+            </div>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="post distill">
+
+      <d-title>
+        <h1>PenguinOS</h1>
+        <p>Work done for ECE 391's extra credit competition.</p>
+      </d-title>
+
+      <d-byline></d-byline>
+
+      <d-article>
+        <p><img src="../../assets/gif/booting_in.gif" alt="Booting the OS" width="100%"></p>
+
+<h2 id="background">Background</h2>
+
+<p>In the spring semester of 2020, the authors and I all worked together for the final project of ECE 391, Computer Systems Engineering. We were
+tasked with creating an operation system with interrupt support, scheduling, and read-only file system, among other things. These
+basic requirements are not the focus of this overview. Instead, we present features developed for the extra credit competition
+in the course, in which our operating system placed 3rd.</p>
+
+<p><em>Note:</em> The code is not publicly available, as it may serve as a reference to current students of the course.</p>
+
+<h2 id="full-support-keyboard-driver">Full-support Keyboard Driver</h2>
+
+<p>The project only required support for alphanumeric, shift, and ctrl keystrokes. We implemented an easily-extensible keyboard driver with 
+support for all of the keystrokes. This is notable, as this required the ability to process multi-byte scan codes, and efficiently map
+those codes to handlers for special keystrokes. In our driver, this is done with a home-baked dictionary and hash function.</p>
+
+<p>The scan codes are first hashed into an index, and the pointer to the <code class="language-plaintext highlighter-rouge">scan_code_list</code> retrieved from the below table using the index.</p>
+
+<figure class="highlight"><pre><code class="language-x86asm" data-lang="x86asm">    # List pointers corresponding to hashed scan codes
+    keyboard_hash_table:
+        .long 0
+        .long scan_code_list_1
+        .long 0
+        .long 0
+        .long 0
+        .long scan_code_list_5
+        .long 0
+        .long scan_code_list_7
+        .long 0
+        .long scan_code_list_9
+        .long scan_code_list_10
+        .long scan_code_list_11
+        .long scan_code_list_12
+        .long scan_code_list_13
+        .long scan_code_list_14
+        .long scan_code_list_15
+        .long scan_code_list_16
+        .long scan_code_list_17
+        .long scan_code_list_18
+        ... (continues further)</code></pre></figure>
+
+<p>Consider a scan code which points to <code class="language-plaintext highlighter-rouge">scan_code_list_18</code>. After following the pointer, we find two possible scan codes at the index. 
+We compare the scan code value to the first long in all elements of the list, and then make used of the make or break handler pointers once we find the right element, depending
+on whether the code is a make (key pressed) code or a break (key released) code. List length is bounded by 3 by design and so this process is <code class="language-plaintext highlighter-rouge">O(1)</code><d-footnote>The list pointers
+and lists were all contained in a .S file. This file was generated with a Python script to minimize collisions, i.e. the number of handler elements in lists with length greater than 1</d-footnote>.</p>
+
+<figure class="highlight"><pre><code class="language-x86asm" data-lang="x86asm">scan_code_list_18:
+    .long 2
+
+    # F9
+    .long 67
+    .long default_make_handler      # Make
+    .long default_break_handler     # Break
+
+    # Keypad /
+    .long 57397
+    .long default_make_handler      # Make
+    .long default_break_handler     # Break</code></pre></figure>
+
+<h2 id="dynamic-memory-allocation">Dynamic Memory Allocation</h2>
+
+<p>We developed a very basic memory allocation scheme, able to allocate memory via slab caches.</p>
+
+<p>This functionality was accessed via system calls:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">malloc</code>: allocate memory</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">free</code>: free memory</p>
+  </li>
+</ul>
+
+<h2 id="readwrite-file-system">Read/Write File System</h2>
+
+<p>We added the ability to write to the file system, an extension from the read-only system required in the project.</p>
+
+<p>The file system was written to via system calls added to our OS, listed below:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">create</code>: create a new file</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">write</code>: modified to be able to write to files</p>
+  </li>
+</ul>
+
+<h2 id="miscellaneous-system-calls">Miscellaneous System Calls</h2>
+<p>We implemented some additional system calls, needed for our
+homegrown version of <code class="language-plaintext highlighter-rouge">vim</code>:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">cursor</code>: set the position of the cursor on the screen</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">getc</code>: get the last character typed by the user, if any</p>
+  </li>
+</ul>
+
+<h2 id="home-baked-vim">Home-baked Vim</h2>
+
+<p>We implemented a basic rendition of vim from scratch as a user-level program. This required making use of the full-support keyboard driver, read/write file system, malloc, as well as
+the miscellaneous system calls we added to the OS.</p>
+
+<p><img src="../../assets/gif/vim.gif" alt="Booting the OS" width="100%"></p>
+
+<h2 id="shutdown">Shutdown</h2>
+
+<p>We implemented a shutdown sequence, adding a fun animation.</p>
+
+<p><img src="../../assets/gif/shutdown.gif" alt="Booting the OS" width="100%"></p>
+
+      </d-article>
+
+      <d-appendix>
+        <d-footnote-list></d-footnote-list>
+        <d-citation-list></d-citation-list>
+      </d-appendix>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    © Copyright 2021 Martin  Michalski.
+    Powered by <a href="http://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio" target="_blank" rel="noopener noreferrer">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
+
+    
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <d-bibliography src="/assets/bibliography/">
+  </d-bibliography>
+
+</html>
