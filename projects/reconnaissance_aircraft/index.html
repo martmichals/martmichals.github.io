@@ -230,7 +230,7 @@
 
 <p>In my senior year of high school, I was a mentee in Northrop Grumman’s HIP program. In this second and final year of the program, I submitted a
 project proposal for an low-cost reconnaissance aircraft, able to snap pictures and fly autonomously (stretch goal). In the end, I built the aircraft,
-assembled sensors and boards, and developed a GUI to display sensor data.</p>
+created a system of sensors and controllers, and developed a GUI to display streamed sensor data.</p>
 
 <h2 id="aircraft-build">Aircraft Build</h2>
 
@@ -245,7 +245,7 @@ power system used, opting to use one powerful motor, as opposed to 2 less powerf
 
 <p><img src="../../assets/img/reconnaissance_aircraft/cut_pieces.jpg" style="width:100%;"></p>
 
-<p>Parts were then assembled to create the finished airframe.</p>
+<p>The parts were then assembled to create the finished airframe.</p>
 
 <p><img src="../../assets/img/reconnaissance_aircraft/unpainted_plane.jpg" style="width:100%;"></p>
 
@@ -264,7 +264,7 @@ battery, RC reciever, and ESC (Electronic Speed Control). Once everything was as
 
 <h2 id="onboard-electronics">Onboard Electronics</h2>
 
-<p>The devices onboard the aircraft were meant to serve three purposes:</p>
+<p>The sensors onboard the aircraft were meant to serve three purposes:</p>
 <ul>
   <li>Monitor the aircraft orientation and position (telemetry)
     <ul>
@@ -296,7 +296,7 @@ airframe.</p>
 <h2 id="gui">GUI</h2>
 
 <p>In order to ease the interpretation of telemetry streamed from the aircraft, I developed a GUI which ran on a groundstation (laptop with an Xbee reciever).
-Gauges roughly mimic real aircraft gauges and indicate:</p>
+The gauges are meant to roughly mimic real aircraft gauges and indicate:</p>
 <ul>
   <li>Attitude</li>
   <li>Groundspeed</li>
@@ -308,8 +308,8 @@ Gauges roughly mimic real aircraft gauges and indicate:</p>
 
 <h2 id="system-demonstration">System Demonstration</h2>
 
-<p>Here is a video of the full system at work. Picture are the aircraft flying, along with the streamed data in the GUI. The attitude indicator is shakey
-due its position on the acrylic board (far from stable mounting points, in an area with high vibration).</p>
+<p>Here is a video of the full system at work. Pictured are the aircraft flying, along with the streamed data in the GUI. The attitude indicator is shakey
+due the gyroscope’s position on the acrylic board (far from stable mounting points, in an area with high vibration).</p>
 
 <iframe height="350" width="100%" src="https://www.youtube.com/embed/ujrxqKpUfvo"></iframe>
 
