@@ -37,7 +37,7 @@ _styles: >
 
 In my senior year of high school, I was a mentee in Northrop Grumman's HIP program. In this second and final year of the program, I submitted a
 project proposal for an low-cost reconnaissance aircraft, able to snap pictures and fly autonomously (stretch goal). In the end, I built the aircraft,
-assembled sensors and boards, and developed a GUI to display sensor data.
+created a system of sensors and controllers, and developed a GUI to display streamed sensor data.
 
 ## Aircraft Build
 
@@ -52,7 +52,7 @@ The parts were then cut out of the foamboard.
 
 <img src="../../assets/img/reconnaissance_aircraft/cut_pieces.jpg" style="width:100%;"/>
 
-Parts were then assembled to create the finished airframe.
+The parts were then assembled to create the finished airframe.
 
 <img src="../../assets/img/reconnaissance_aircraft/unpainted_plane.jpg" style="width:100%;"/>
 
@@ -71,7 +71,7 @@ After a successful maiden flight, the aircraft got a paint job!
 
 ## Onboard Electronics
 
-The devices onboard the aircraft were meant to serve three purposes:
+The sensors onboard the aircraft were meant to serve three purposes:
  * Monitor the aircraft orientation and position (telemetry)
    * GPS Sensor
    * Gyroscope
@@ -92,7 +92,7 @@ airframe.
 ## GUI
 
 In order to ease the interpretation of telemetry streamed from the aircraft, I developed a GUI which ran on a groundstation (laptop with an Xbee reciever).
-Gauges roughly mimic real aircraft gauges and indicate:
+The gauges are meant to roughly mimic real aircraft gauges and indicate:
  * Attitude
  * Groundspeed
  * Heading
@@ -102,8 +102,8 @@ Gauges roughly mimic real aircraft gauges and indicate:
 
 ## System Demonstration
 
-Here is a video of the full system at work. Picture are the aircraft flying, along with the streamed data in the GUI. The attitude indicator is shakey
-due its position on the acrylic board (far from stable mounting points, in an area with high vibration).
+Here is a video of the full system at work. Pictured are the aircraft flying, along with the streamed data in the GUI. The attitude indicator is shakey
+due the gyroscope's position on the acrylic board (far from stable mounting points, in an area with high vibration).
 
 <iframe height="350" width="100%" src="https://www.youtube.com/embed/ujrxqKpUfvo"/>
 
