@@ -5,7 +5,7 @@ description: Work done for ECE 391's extra credit competition.
 date: 2021-11-22
 img: assets/img/penguin_os/penguin.jpg
 importance: 1
-category: software
+category: software & interdisciplinary
 
 authors:
   - name: Martin Michalski

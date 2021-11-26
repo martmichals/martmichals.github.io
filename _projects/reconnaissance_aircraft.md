@@ -1,11 +1,11 @@
 ---
 layout: distill
-title: REconnaissance Aircraft
-description: A R(emote) E(xpendable) -connaissance Aircraft.
+title: REcon Aircraft
+description: A R(emote) E(xpendable) con (naissance) Aircraft.
 date: 2021-11-25
 img: assets/img/reconnaissance_aircraft/cover.png
 importance: 2
-category: software
+category: software & interdisciplinary
 
 authors:
   - name: Martin Michalski
