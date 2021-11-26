@@ -46,11 +46,11 @@ power system used, opting to use one powerful motor, as opposed to 2 less powerf
 
 The aircraft plans were first printed, taped together, and then traced onto foam boards.
 
-<img src="../../assets/img/reconnaissance_aircraft/printed_plans.jpg" style="width:100%;"/>
+<img src="../../assets/img/reconnaissance_aircraft/printed_taped_plans.jpg" style="width:100%;"/>
 
 The parts were then cut out of the foamboard.
 
-<img src="../../assets/img/reconnaissance_aircraft/cut_pieces.jpg" style="width:100%;"/>
+<img src="../../assets/img/reconnaissance_aircraft/cut_pieces_floor.jpg" style="width:100%;"/>
 
 The parts were then assembled to create the finished airframe.
 
@@ -59,7 +59,7 @@ The parts were then assembled to create the finished airframe.
 Here is a closer look at the power "pod" that I created to house the brushless motor,
 battery, RC reciever, and ESC (Electronic Speed Control). Once everything was assembled, the plane was test flown for the first time!
 
-<img src="../../assets/img/reconnaissance_aircraft/power_system.jpg" style="width:100%;"/>
+<img src="../../assets/img/reconnaissance_aircraft/power_system_close.jpg" style="width:100%;"/>
 
 After a successful maiden flight, the aircraft got a paint job!
 
