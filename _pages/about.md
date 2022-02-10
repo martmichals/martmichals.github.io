@@ -18,5 +18,6 @@ social: true  # includes social icons at the bottom of the page
 I'm a current student at the University of Illinois at Urbana-Champaign. I started off studying Electrical Engineering, but after some time, I realized my interests lay a couple
 layers of abstraction higher, in Natural Language Processing.
 
-Currently, I am working under [Professor Girju](https://experts.illinois.edu/en/persons/corina-r-girju). We are using a dataset of patient-doctor interactions to 
-draw conclusions on the nature of empathy in a clinical setting.
+Currently, I am working in [Professor Han](http://hanj.cs.illinois.edu/)'s research group under the direct supervision of
+[Xiaotao Gu](https://xiaotao2.web.illinois.edu/). We are working on better solutions to the problem of weakly supervised 
+taxonomy completion, i.e. discovering hierarchical relations between named entities in a given corpus. 
