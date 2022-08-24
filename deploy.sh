@@ -26,3 +26,6 @@ git push
 
 # Delete the temporary directory
 rm -rf $tmpdir
+
+# Return to master branch
+git checkout master
