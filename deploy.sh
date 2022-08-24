@@ -1,29 +1,28 @@
-# Exit on command error
+# Exit when any command fails
 set -e
 
-# Track last executed command, send error
+# Keep track of the last executed command
 trap 'last_command=$current_command; current_command=$BASH_COMMAND' DEBUG
+
+# Echo an error message before exiting
 trap 'echo "\"${last_command}\" command filed with exit code $?."' EXIT
 
 # Build locally
-git checkout master
+git checkout master 
 jekyll build
 
-# Make temporary directory
-tmp_dir=$(mktemp -d -t ci-XXXXXXXXXX)
+# Copy site to temporary directory
+tmpdir=$(mktemp -d "${TMPDIR:-/tmp/}$(basename $0).XXXXXXXXXXXX")
+cp -r ./_site/* $tmpdir
+cp .gitignore $tmpdir/.gitignore
 
-# Copy source to temporary directory
-cp -r ./_site/* ${tmp_dir}
-
-# Switch to live branch
+# Checkout published branch
 git checkout gh-pages
-
-# Add changes
 rm -rf ./*
-cp -r ${tmp_dir}/* .
+cp -r $tmpdir/* .
 git add .
 git commit -m "Deployment of portfolio"
 git push
 
-# Change branches back to development branch
-git checkout master
+# Delete the temporary directory
+rm -rf $tmpdir
