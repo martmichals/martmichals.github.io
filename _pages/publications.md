@@ -3,11 +3,9 @@ layout: page
 permalink: /publications/
 title: publications
 description: Publications in reversed chronological order.
-years: []
+years: [2022]
 nav: true
 ---
-
-<h1>Nothing to see here...yet.</h1>
 
 <div class="publications">
 
