@@ -51,7 +51,7 @@ og_image: # The site-wide (default for all links) Open Graph preview image
 github_username: martmichals
 gitlab_username: # your GitLab user name
 twitter_username: # your Twitter handle
-linkedin_username: # your LinkedIn user name
+linkedin_username: martin-michalski-292150175 # your LinkedIn user name
 scholar_userid: # your Google Scholar ID
 orcid_id: # your ORCID ID
 medium_username: # your Medium username
@@ -70,7 +70,7 @@ rss_icon: false
 contact_note: >
   Email is the best way to get in touch with me.
 
-google_analytics: UA-XXXXXXXXX # out your google-analytics code
+google_analytics: G-CCY8H8MTVH # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 
 # -----------------------------------------------------------------------------
@@ -239,7 +239,7 @@ jekyll-diagrams:
 # Optional Features
 # -----------------------------------------------------------------------------
 
-enable_google_analytics:    false  # enables google analytics
+enable_google_analytics:    true  # enables google analytics
 enable_panelbear_analytics: false  # enables panelbear analytics
 enable_mansory:             true   # enables automatic project cards arangement
 enable_math:                true   # enables math typesetting (uses MathJax)

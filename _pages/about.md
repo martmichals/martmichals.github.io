@@ -15,9 +15,13 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I'm a current student at the University of Illinois at Urbana-Champaign. I started off studying Electrical Engineering, but after some time, I realized my interests lay a couple
-layers of abstraction higher, in Natural Language Processing.
+Currently, I am working as a  Natural Language Processing Engineer at Alight. I studied at the 
+University of Illinois at Urbana-Champaign, graduating in 3 1/2 years with a B.S. in Computer Engineering.
+I worked as an undergraduate researcher, with professors [Han](http://hanj.cs.illinois.edu/) and
+[Girju](https://linguistics.illinois.edu/directory/profile/girju).
 
-Currently, I am working in [Professor Han](http://hanj.cs.illinois.edu/)'s research group under the direct supervision of
-[Xiaotao Gu](https://xiaotao2.web.illinois.edu/). We are working on the problem of weakly supervised 
-taxonomy completion, discovering hierarchical relations between named entities in various corpora. 
+I love all things to do with text processing. Information extraction, conversational agents, and
+few-shot learning are among my favorite topics to read about and do projects in. 
+
+Browse this website to get a feel for some of the work I have done. Feel free to 
+reach out with any questions!
