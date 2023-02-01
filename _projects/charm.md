@@ -101,12 +101,20 @@ of our design. It takes in data from the GPS Unit and Battery Voltage Monitor vi
 and $$I^2C$$, respectively, while also receiving and sending network traffic via 2.4 Ghz U.FL
 antenna. It is powered by the Power Management Subsystem with 3.3 V (±0.1V).
 
-This subsystem is responsible for providing WiFi (High-Level Requirement 1) and sending telemetry from the sensors (High-Level Requirement 3).
+This subsystem is responsible for providing WiFi (High-Level Requirement 1) and sending telemetry 
+from the sensors (High-Level Requirement 3).
+
+<img src="../../assets/img/charm/routing.png" style="width:100%">
+<p align = "center">Routing System Hardware</p>
+
+## Results
+
+Our project worked, satisfying all of our requirements!
 
 ## Greater Detail
 
 If you would like to read more about this project, check out the 
 [GitHub repo](https://github.com/CaptnSisko/CHARM) and the 
 [UIUC project page](https://courses.engr.illinois.edu/ece445/projects.asp).
-These contain the project source and much more detailed documentation,
+These contain the project source and detailed documentation,
 respectively.
