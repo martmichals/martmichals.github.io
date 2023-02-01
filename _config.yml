@@ -77,9 +77,11 @@ panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: # your blog must have a name for it to show up in the nav bar
-blog_description:
-permalink: /blog/:year/:title/
+# blog_name: Natural Language Nerd
+# blog_nav_title: blog
+# blog_description: NLP lacks approachable, easy-to-follow materials 
+# blog_description: NLP lacks approachable, easy-to-follow materials for newcomers. This is a blog with introductory NLP material, as well as articles about real-world problems in the NLP sphere.
+# permalink: /blog/:year/:title/
 
 # Pagination
 pagination:
@@ -175,6 +177,8 @@ jekyll-archives:
     year: '/blog/:year/'
     tag: '/blog/tag/:name/'
     category: '/blog/category/:name/'
+
+display_tags: ['formatting', 'images', 'links', 'math', 'code'] # this tags will be dispalyed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
