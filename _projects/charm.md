@@ -43,6 +43,10 @@ _styles: >
 
 ## Background
 
+This was our project for Senior Design (ECE 445) at the University of Illinois. We were tasked
+with finding and developing a solution for any problem that may be solved with a combination
+of hardware design and software.
+
 There are a variety of situations in which people have limited cellular or internet connectivity. 
 For example, a natural disaster may wipe out cell towers, leaving victims without a means of 
 contacting rescuers or loved ones. Our system aims to be a lightweight, cheap, and quickly
@@ -71,7 +75,7 @@ the sensors and microcomputer in the other two on-board subsystems. The Sensor
 Subsystem provides GPS and battery voltage data to the on-board microcomputer. The Routing
 Subsystem is host to the on-board microcomputer, which was responsible for routing
 network traffic, as well as sending the node's sensor data to the System Monitor, a 
-a web interface for used for monitoring all the nodes in the network.
+web interface for used for monitoring all the nodes in the network.
 
 
 <img src="../../assets/img/charm/block.png" style="width:100%">
